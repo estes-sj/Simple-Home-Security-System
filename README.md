@@ -1,62 +1,53 @@
 # Project Title
 
-Simple overview of use/purpose.
+CIS 401 Advanced Network Security Project
+Door Security System
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This project is a simple door security system that uses a Raspberry Pi 3B+, Raspberry Pi Camera, NodeMCU, and reed switch to detect magnetic open/close state and send an email notification when state change is detected.
 
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### Wiring Simple Diagram
+![Simple Wiring Diagram](Simple-Home-Security-System\simplediagram.png)
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Download repository from GitHub.
+* ex. git clone
+* Install dependencies.
+* ex. pip install -r requirements.txt
+
+* Change COM port to match your NodeMCU serial port.
+* Change door_statusv3.ino to match Wifi SSID and password.
+* Optional: Add Raspberry Pi to Wireguard VPN:
+* Information can be found here: https://www.sigmdel.ca/michel/ha/wireguard/wireguard_02_en.html#linux_client 
+* Turn on Wireguard VPN.
+```
+sudo wg-quick up wg0
+```
 
 ### Executing program
 
 * How to run the program
 * Step-by-step bullets
-```
-code blocks for commands
-```
 
-## Help
-
-Any advise for common problems or issues.
+* Plug in NodeMCU to Raspberry Pi with USB cable.
+* Place telegrambot.py on the raspberry pi
 ```
-command to run if program contains helper info
+python3 telegrambot.py
 ```
+* Test reed switch by using magnetic switch.
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Samuel Estes
+Adam Waite
+Graham Ohleger
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Dr. Azab

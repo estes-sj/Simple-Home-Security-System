@@ -23,14 +23,14 @@ String doorState;
 // Auxiliary variables (it will only detect changes that are 1500 milliseconds apart)
 unsigned long previousMillis = 0;
 const long interval = 1500;
-const char* ssid = "iPhone";
-const char* password = "goaway955";
+const char* ssid = "Your SSID";
+const char* password = "Your Password";
 // Initialize Telegram BOT
-#define BOTtoken "5245859702:AAEBW54A2E7LCqwnHsexIEZOUt6N3zZ3Y10"  // your Bot Token (Get from Botfather)
+#define BOTtoken "Your token"  // your Bot Token (Get from Botfather)
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
 // message you
-#define CHAT_ID "5116513926"  // your chat ID
+#define CHAT_ID "Your ID"  // your chat ID
 X509List cert(TELEGRAM_CERTIFICATE_ROOT);
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtoken, client);

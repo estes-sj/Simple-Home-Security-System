@@ -5,8 +5,8 @@ import os
 from picamera import PiCamera
 from datetime import datetime
 path=os.getenv("HOME")
-bot = telepot.Bot('5245859702:AAEBW54A2E7LCqwnHsexIEZOUt6N3zZ3Y10')
-id = '5116513926'
+bot = telepot.Bot('TOKEN HERE')
+id = 'ID HERE'
 # set up the serial line
 # ser = serial.Serial('COM3', 115200)
 ser = serial.Serial('/dev/ttyUSB0', 115200)
