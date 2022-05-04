@@ -10,7 +10,7 @@ This project is a simple door security system that uses a Raspberry Pi 3B+, Rasp
 ## Getting Started
 
 ### Wiring Simple Diagram
-![Simple Wiring Diagram](Simple-Home-Security-System\simplediagram.png)
+![Simple Wiring Diagram](simplediagram.png)
 
 ### Installing
 
