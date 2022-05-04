@@ -10,7 +10,7 @@ This project is a simple door security system that uses a Raspberry Pi 3B+, Rasp
 ## Getting Started
 
 ### Wiring Simple Diagram
-![Simple Wiring Diagram](simplediagram.png)
+![Simple Wiring Diagram](docs/simplediagram.png)
 
 ### Installing
 
@@ -19,6 +19,7 @@ This project is a simple door security system that uses a Raspberry Pi 3B+, Rasp
 * Install dependencies.
 * ex. pip install -r requirements.txt
 
+* Download Kali Linux Machine
 * Change COM port to match your NodeMCU serial port.
 * Change door_statusv3.ino to match Wifi SSID and password.
 * Optional: Add Raspberry Pi to Wireguard VPN:
@@ -39,6 +40,18 @@ sudo wg-quick up wg0
 python3 telegrambot.py
 ```
 * Test reed switch by using magnetic switch.
+
+## Example Images and Arp Poisoning Attack
+
+![Magnetic Switch](docs/6.png)
+![Telegram](docs/7.png)
+![IPs](docs/1.png)
+![arpspoof](docs/5.png)
+
+*Note that since both NodeMCU and Raspberry Pi have IP addresses to act as a simple multi-factor communication system, the arpspoof attack requires two targets.
+```
+arpspoof -i eth0 -t [victim ip] -r [router ip]
+```
 
 ## Authors
 
